@@ -1,0 +1,110 @@
+
+
+*:not(html){
+    padding :0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container{
+    /* flex: 1 1 0; */
+    border: 2px solid black;
+    width: 85vw;
+    height: 94vh;
+
+    display: flex;
+    text-align: center;
+
+
+}
+
+
+
+
+
+
+.prj-container, .todo-container{
+    border: 2px solid red;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.prj-container{
+    flex: 0 0 200px;
+}
+
+
+.todo-title,.prj-title{
+    border: 3px solid gold;
+}
+
+
+.prj-list{
+    border: 3px solid blueviolet;
+    flex: 1;
+    font-size:large;
+}
+
+
+.all-todos{
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    padding: 5px;
+}
+
+.todo{
+    text-align: left;
+    flex: none;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title{
+    font-size: x-large;
+    padding-top: 20px;
+}
+
+
+.desc{
+    font-size: small;
+    opacity: 0.6;
+}
+
+.data{
+    font-size: medium;
+    flex: 1;
+    border: 2px solid black;
+}
+
+.top-tiles{
+    display: flex;
+    gap: 5px;
+    font-size: x-small;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+}
+
+.edit-btn{
+    position: absolute;
+    right: 5px;
+    top: 4px;
+}
