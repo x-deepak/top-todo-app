@@ -6,8 +6,6 @@ const Priority = Object.freeze({
     VERY_HIGH: 2,
 });
 
-
-
 class Data{
     constructor(content,type){
         this.content = content;
@@ -15,10 +13,22 @@ class Data{
     }
 }
 
+export class NoteData extends Data{
+    constructor(content,type){
+        super(content,type);
+    }
+}
 
 
+export class CheckListData extends Data{
+    constructor(content,type,isChecked){
+        super(content,type);
+        this.isChecked = isChecked;
+    }
+}
 
-class Todo{
+
+export class Todo{
     constructor(title,desc,dueDate,priority,dataArray){
         this.title = title;
         this.desc = desc;

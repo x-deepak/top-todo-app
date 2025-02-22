@@ -1,7 +1,8 @@
 
 
-class Project{
-    constructor(name){
+export class Project{
+    constructor(name,todoArray){
         this.name = name;
+        this.todos = todoArray;
     }
 }

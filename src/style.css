@@ -67,7 +67,7 @@ body{
     padding: 5px;
 }
 
-.todo{
+.todo-card{
     text-align: left;
     flex: none;
     width: 200px;
@@ -102,6 +102,11 @@ body{
     left: 5px;
     top: 4px;
 }
+
+.due-time, .priority{
+    border: 2px solid plum;
+}
+
 
 .edit-btn{
     position: absolute;
