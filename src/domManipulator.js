@@ -143,3 +143,15 @@ export const displayProjects = function(projectList){
         prjContainer.appendChild(createProjectDiv(element.name,index));
     });
 }
+
+
+
+
+
+
+
+
+
+export const showDialog = function(){
+
+}

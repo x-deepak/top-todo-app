@@ -44,5 +44,55 @@
             </div>
         </div>
     </div>
+    <dialog open>
+    
+            <div class="first-container">
+                <label for="title">Title</label>
+                <input type="text" id="title">
+                <label for="date">Date</label>
+                <input type="date" id="date">
+            </div>
+            <div class="sec-container">
+                <label for="descp">Description</label>
+                <input type="text" id="descp">
+            </div>
+            <div class="radio-grp">
+                Priority:
+                <label for="priority-normal">Normal</label>
+                <input type="radio" name="priority" id="priority-normal" value="0">
+                <label for="priority-high">High</label>
+                <input type="radio" name="priority" id="priority-high" value="0">
+                <label for="priority-vhigh">Very High</label>
+                <input type="radio" name="priority" id="priority-vhigh" value="0">
+            </div>
+            <div class="data-container">
+                 <div class="top-add-btns">            <!-- make this sticky -->
+                    <div class="add-note">
+                        Note
+                        <button>+</button>
+                    </div>
+                    <div class="add-checkbox">
+                        checkbox
+                        <button>+</button>
+                    </div>
+                </div>
+                <!-- sample note & chk -->
+                <div class="note-div">
+                    <input type="text" name="" id="">
+                    <button>X</button>
+                </div>
+                <div class="checkbox-div">
+                    <input type="checkbox"  id="one">
+                    <input type="text" name="" id="">
+                    <button>X</button>
+                </div>
+
+            </div>
+            <div class="btn-container">
+                <button>Cancel</button>
+                <button>Save</button>
+            </div>
+    
+    </dialog>
 </body>
 </html>
