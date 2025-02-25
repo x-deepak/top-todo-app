@@ -17,7 +17,7 @@ body{
 }
 
 .main-container{
-    /* flex: 1 1 0; */
+
     border: 2px solid black;
     width: 85vw;
     height: 94vh;
@@ -30,31 +30,49 @@ body{
 
 
 
-
-
-
-.prj-container, .todo-container{
-    border: 2px solid red;
-    flex: 1;
+.todo-container{
     display: flex;
     flex-direction: column;
+    border: 2px solid red;
+    flex-grow: 1;
+    
 
 }
 
 .prj-container{
+    display: flex;
     flex: 0 0 200px;
+    border: 2px solid red;
+    flex-direction: column;
+
+}
+
+.add-btn{
+ 
 }
 
 
+
 .todo-title,.prj-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     border: 3px solid gold;
 }
 
 
 .prj-list{
+    padding: 2px;
     border: 3px solid blueviolet;
     flex: 1;
     font-size:large;
+}
+
+.prj{
+    padding: 2px;
+    display: flex;
+    gap: 2px;
 }
 
 
@@ -62,9 +80,11 @@ body{
     flex: 1;
     display: flex;
     justify-content: start;
-    align-items: start;
+    align-content: start;
     gap: 10px;
     padding: 5px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
 }
 
 .todo-card{
@@ -107,20 +127,35 @@ body{
     border: 2px solid plum;
 }
 
+.prj > p{
+    flex-grow: 1;
+}
 
-.edit-btn{
+
+
+.edit-del-btn-container{
+    display: flex;
+    gap: 4px;
+}
+
+.todo-card > .edit-del-btn-container{
     position: absolute;
-    right: 5px;
+    right: 4px;
     top: 4px;
 }
 
+
 dialog{
     margin: auto;
-    display: flex;
+}
+
+
+#dialog-form{
+    display: flex; 
     flex-direction: column;
     gap: 10px;
     padding: 10px;
-}
+} 
 
 .data-container{
     border: 2px solid black;
@@ -176,3 +211,4 @@ dialog{
 .data-container input[type="text"]{
     flex-grow: 1;
 }
+

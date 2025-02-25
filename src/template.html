@@ -8,17 +8,20 @@
 <body>
     <div class="main-container">
         <div class="prj-container">
-            <h1 class="prj-title">
-                Project
-            </h1>
-            <div class="prj-list">
-                <div class="prj">default</div>
+            <div class="prj-title">
+                <h1>Project</h1>
+                <button class="add-btn">+</button>
             </div>
+            <div class="prj-list">
+                <div class="prj"><p>default</p></div>
+            </div>
+           
         </div>
         <div class="todo-container">
-            <h1 class="todo-title">
-                Todos
-            </h1>
+            <div class="todo-title">
+                <h1>Todos</h1>
+                <button class="add-btn" id="add-todo">+</button>
+            </div>
             <div class="all-todos">
                 <div class="todo-card">
                     <h3 class="title">Title</h3>
@@ -38,61 +41,64 @@
                         <div class="due-time">Due Today</div>
                         <div class="priority">High Priority</div>
                     </div>
-                    <button class="edit-btn">X</button>
+                    <button class="edit-btn">E</button>
+                    <button class="del-btn">X</button>
                 </div>
 
             </div>
+           
         </div>
     </div>
-    <dialog open>
-    
-            <div class="first-container">
-                <label for="title">Title</label>
-                <input type="text" id="title">
-                <label for="date">Date</label>
-                <input type="date" id="date">
-            </div>
-            <div class="sec-container">
-                <label for="descp">Description</label>
-                <input type="text" id="descp">
-            </div>
-            <div class="radio-grp">
-                Priority:
-                <label for="priority-normal">Normal</label>
-                <input type="radio" name="priority" id="priority-normal" value="0">
-                <label for="priority-high">High</label>
-                <input type="radio" name="priority" id="priority-high" value="0">
-                <label for="priority-vhigh">Very High</label>
-                <input type="radio" name="priority" id="priority-vhigh" value="0">
-            </div>
-            <div class="data-container">
-                 <div class="top-add-btns">            <!-- make this sticky -->
-                    <div class="add-note">
-                        Note
-                        <button>+</button>
+    <dialog>
+            <form id="dialog-form">
+                <div class="first-container">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="sec-container">
+                    <label for="descp">Description</label>
+                    <input type="text" id="descp" name="descp">
+                </div>
+                <div class="radio-grp">
+                    Priority:
+                    <label for="priority-normal">Normal</label>
+                    <input type="radio" name="priority" id="priority-Normal" value="0" checked>
+                    <label for="priority-high">High</label>
+                    <input type="radio" name="priority" id="priority-High" value="1">
+                    <label for="priority-vhigh">Very High</label>
+                    <input type="radio" name="priority" id="priority-Very-High" value="2">
+                </div>
+                <div class="data-container">
+                     <div class="top-add-btns">            <!-- make this sticky -->
+                        <div class="add-note">
+                            Note
+                            <button>+</button>
+                        </div>
+                        <div class="add-checkbox">
+                            checkbox
+                            <button>+</button>
+                        </div>
                     </div>
-                    <div class="add-checkbox">
-                        checkbox
-                        <button>+</button>
+                    <!-- sample note & chk -->
+                    <div class="dialog-data-container">
+                        <div class="note-div">
+                            <input type="text" name="" id="">
+                            <button>X</button>
+                        </div>
+                        <div class="checkbox-div">
+                            <input type="checkbox"  id="one">
+                            <input type="text" name="" id="">
+                            <button>X</button>
+                        </div>
                     </div>
                 </div>
-                <!-- sample note & chk -->
-                <div class="note-div">
-                    <input type="text" name="" id="">
-                    <button>X</button>
+                <div class="btn-container">
+                    <button type="button" id="cancel-btn" formmethod="dialog">Cancel</button>
+                    <button type="submit" id="save-btn">Save</button>
                 </div>
-                <div class="checkbox-div">
-                    <input type="checkbox"  id="one">
-                    <input type="text" name="" id="">
-                    <button>X</button>
-                </div>
-
-            </div>
-            <div class="btn-container">
-                <button>Cancel</button>
-                <button>Save</button>
-            </div>
-    
+            </form>
     </dialog>
 </body>
 </html>
